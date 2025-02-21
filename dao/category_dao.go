@@ -23,7 +23,7 @@ func GetCateGory() ([]models.Category, error) {
 	}
 	return cateGories, nil
 }
-func GetPostPageByCategoryId(cId int) string {
+func GetCategoryNameById(cId int) string {
 	row := DB.QueryRow("select  name from blog_category where cid=?", cId)
 	if row.Err() != nil {
 		log.Println(row.Err())
