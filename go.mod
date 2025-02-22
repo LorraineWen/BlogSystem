@@ -1,4 +1,4 @@
-module goblog
+module blogsystem
 
 go 1.17
 
